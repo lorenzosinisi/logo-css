@@ -1,3 +1,5 @@
+/* Optimized only for the last version of Firefox
+ * This is just a demo, should look better at the end of the work */
 html,
 body,
 ul,
@@ -15,41 +17,7 @@ body {
   font-weight: bold;
   font-color: #333; }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-nav li {
-  display: inline-block; }
-nav a {
-  display: block;
-  padding: 6px 12px;
-  text-decoration: none; }
-
-article[role="main"] {
-  float: left;
-  width: 62.5%; }
-
-.box {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  border-radius: 10px; }
-
-.message, .success, .error, .warning {
-  border: 1px solid #ccc;
-  padding: 10px;
-  color: #333; }
-
-.success {
-  border-color: green; }
-
-.error {
-  border-color: red; }
-
-.warning {
-  border-color: yellow; }
-
+/*START LOGO */
 .logo-aklamio-small {
   background-color: #828282;
   width: 291px;
@@ -59,7 +27,6 @@ article[role="main"] {
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
   -ms-border-radius: 150px;
-  -o-border-radius: 150px;
   border-radius: 150px;
   -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
   -webkit-user-select: none;
@@ -74,90 +41,82 @@ article[role="main"] {
       background-color: #828282; }
   .logo-aklamio-small .head {
     transform: skewX(162deg) rotate(-19deg);
+    -webkit-border-radius: 0px 59px 0px 0px;
+    -moz-border-radius: 0px 59px 0px 0px;
+    -ms-border-radius: 0px 59px 0px 0px;
     border-radius: 0px 59px 0px 0px;
     width: 133px;
-    height: 154px;
-    left: 55px;
-    top: 274px;
+    height: 132px;
+    left: 41px;
+    top: 286px;
     background: none repeat scroll 0% 0% #DD3E29 !important; }
   .logo-aklamio-small .head-top {
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
     border-radius: 100%;
+    -webkit-transform: rotate(5deg);
+    -webkit-transform-style: flat;
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -moz-transform-style: flat;
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
     transform: rotate(5deg);
     width: 43px;
     height: 21px;
     left: 117px;
     top: 166px; }
   .logo-aklamio-small .head-right {
-    width: 26px;
-    height: 153px;
-    left: 199px;
-    top: 273px;
+    width: 13px;
+    height: 93px;
+    left: 183px;
+    top: 309px;
     background: none repeat scroll 0% 0% #DD3E29; }
   .logo-aklamio-small .head-bottom {
+    -webkit-border-radius: 0px 0px 0px 20px;
+    -moz-border-radius: 0px 0px 0px 20px;
+    -ms-border-radius: 0px 0px 0px 20px;
     border-radius: 0px 0px 0px 20px;
-    width: 32px;
+    width: 8px;
     height: 32px;
-    top: 295px;
-    left: 89px;
+    top: 297px;
+    left: 92px;
     background: none repeat scroll 0% 0% #DD3E29;
     z-index: 1000000; }
   .logo-aklamio-small .trunk-right {
     -webkit-border-radius: 0px 40% 2% 0;
-    -moz-border-radius: 0px 0% 2% 0px;
-    -ms-border-radius: 0px 0% 2% 0px;
-    -o-border-radius: 0px 0% 2% 0px;
-    border-radius: 0px 0% 2% 0px;
+    -moz-border-radius: 0px 40% 2% 0;
+    -ms-border-radius: 0px 40% 2% 0;
+    border-radius: 0px 40% 2% 0;
     width: 20px;
     height: 48px;
     left: 140px;
-    top: 337px; }
+    top: 336px; }
   .logo-aklamio-small .trunk-bottom {
     width: 0px;
     height: 0px;
-    top: 415px;
+    top: 402px;
     border-style: solid;
-    border-width: 27px 36.5px 0px 0px;
+    border-width: 25px 28.5px 0px 0px;
     border-color: #DD3E29 #828282;
-    left: 189px;
+    left: 167px;
     z-index: 1; }
-  .logo-aklamio-small .crescent {
-    width: 300px;
-    height: 300px;
-    background-color: #DD3E29;
-    border-radius: 150px;
-    position: relative; }
-  .logo-aklamio-small .crescent:before {
-    content: "";
-    width: 220px;
-    height: 220px;
-    display: block;
-    position: absolute;
-    border-radius: 110px;
-    right: -5px;
-    top: 40px;
-    background: #fff;
-    border: 2px solid #000; }
-  .logo-aklamio-small .crescent:after {
-    background: none repeat scroll 0 0 #FFFFFF;
-    border-radius: 100px;
-    content: "";
-    display: block;
-    height: 140px;
-    position: absolute;
-    right: -18px;
-    top: 83px;
-    width: 140px; }
   .logo-aklamio-small .trunk-left {
+    -webkit-border-radius: 40% 0px 0px 39%;
+    -moz-border-radius: 40% 0px 0px 39%;
+    -ms-border-radius: 40% 0px 0px 39%;
     border-radius: 40% 0px 0px 39%;
     width: 50px;
     height: 47px;
-    top: 338px;
-    left: 108px; }
+    top: 337px;
+    left: 110px; }
   .logo-aklamio-small .trunk-bottom-none {
     -webkit-border-radius: 22% 0 9px 26%;
     -moz-border-radius: 22% 0 9px 26%;
     -ms-border-radius: 22% 0 9px 26%;
-    -o-border-radius: 22% 0 9px 26%;
     border-radius: 22% 0 9px 26%;
     idth: 32px;
     height: 22px;
@@ -167,7 +126,6 @@ article[role="main"] {
     -webkit-border-radius: 130% 140% 50% 121%;
     -moz-border-radius: 130% 140% 50% 121%;
     -ms-border-radius: 130% 140% 50% 121%;
-    -o-border-radius: 130% 140% 50% 121%;
     border-radius: 130% 140% 50% 121%;
     width: 19px;
     height: 32px;
@@ -177,13 +135,21 @@ article[role="main"] {
     -webkit-border-radius: 0 170% 0 0;
     -moz-border-radius: 0 170% 0 0;
     -ms-border-radius: 0 170% 0 0;
-    -o-border-radius: 0 170% 0 0;
     border-radius: 0 170% 0 0;
     width: 18px;
     height: 12px;
     left: 178px;
     top: 184px; }
   .logo-aklamio-small .head-none {
+    -webkit-transform: rotate(270deg);
+    -webkit-transform-style: flat;
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -moz-transform-style: flat;
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
     transform: rotate(270deg);
     width: 26px;
     height: 30px;
@@ -191,25 +157,49 @@ article[role="main"] {
     top: 347px;
     background: none repeat scroll 0% 0% #DD3E29 !important;
     z-index: 100;
-    border-radius: 123% 104% 29% 30% / 144% 105% 100% 100%; }
+    -webkit-border-radius: 123% 104% 29% 30%/144% 105% 100% 100%;
+    -moz-border-radius: 123% 104% 29% 30%/144% 105% 100% 100%;
+    -ms-border-radius: 123% 104% 29% 30%/144% 105% 100% 100%;
+    border-radius: 123% 104% 29% 30%/144% 105% 100% 100%; }
   .logo-aklamio-small .eye {
-    border-radius: 32% 46% 0px 0px;
-    width: 40px;
-    height: 31px;
-    left: 120px;
-    top: 309px; }
+    width: 44px;
+    height: 36px;
+    left: 115px;
+    top: 303px;
+    -webkit-border-radius: 30% 57% 0px 0px/7% 44% 57% 32%;
+    -moz-border-radius: 30% 57% 0px 0px/7% 44% 57% 32%;
+    -ms-border-radius: 30% 57% 0px 0px/7% 44% 57% 32%;
+    border-radius: 30% 57% 0px 0px/7% 44% 57% 32%;
+    -webkit-transform: skewY(-4deg) skewX(4deg) rotate(1deg);
+    -webkit-transform-style: flat;
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -moz-transform-style: flat;
+    -moz-transform: skewY(-4deg) skewX(4deg) rotate(1deg);
+    -ms-transform: skewY(-4deg) skewX(4deg) rotate(1deg);
+    -o-transform: skewY(-4deg) skewX(4deg) rotate(1deg);
+    transform: skewY(-4deg) skewX(4deg) rotate(1deg); }
   .logo-aklamio-small .ear-flap {
+    -webkit-transform: rotate(70deg) skewX(156deg);
+    -webkit-transform-style: flat;
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -moz-transform-style: flat;
+    -moz-transform: rotate(70deg) skewX(156deg);
+    -ms-transform: rotate(70deg) skewX(156deg);
+    -o-transform: rotate(70deg) skewX(156deg);
     transform: rotate(70deg) skewX(156deg);
     width: 14px;
     height: 10px;
-    top: 275px;
-    left: 195px;
+    top: 310px;
+    left: 180px;
     background: none repeat scroll 0% 0% #DD3E29 !important; }
   .logo-aklamio-small .ear-flap-left-none {
     -webkit-border-radius: 16px 0 0 0;
     -moz-border-radius: 16px 0 0 0;
     -ms-border-radius: 16px 0 0 0;
-    -o-border-radius: 16px 0 0 0;
     border-radius: 16px 0 0 0;
     width: 39px;
     height: 20px;
@@ -219,38 +209,66 @@ article[role="main"] {
     -webkit-border-radius: 9px 0 0 0;
     -moz-border-radius: 9px 0 0 0;
     -ms-border-radius: 9px 0 0 0;
-    -o-border-radius: 9px 0 0 0;
     border-radius: 9px 0 0 0;
     width: 25px;
     height: 32px;
     top: 58px;
     left: 107px; }
   .logo-aklamio-small .body-top {
-    border-radius: 84% 43% 14%;
-    width: 35px;
-    height: 20px;
-    top: 321px;
-    left: 115px;
+    -webkit-border-radius: 47% 43% 14%;
+    -moz-border-radius: 47% 43% 14%;
+    -ms-border-radius: 47% 43% 14%;
+    border-radius: 47% 43% 14%;
+    width: 39px;
+    height: 29px;
+    top: 317px;
+    left: 110px;
     background-color: #DD3E29; }
   .logo-aklamio-small .body-left {
+    -webkit-border-radius: 40px 0px 0px 167%;
+    -moz-border-radius: 40px 0px 0px 167%;
+    -ms-border-radius: 40px 0px 0px 167%;
     border-radius: 40px 0px 0px 167%;
     width: 29px;
     height: 6px;
     top: 145px;
     left: 126px;
+    -webkit-transform: rotate(12deg);
+    -webkit-transform-style: flat;
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -moz-transform-style: flat;
+    -moz-transform: rotate(12deg);
+    -ms-transform: rotate(12deg);
+    -o-transform: rotate(12deg);
     transform: rotate(12deg);
     z-index: 101; }
   .logo-aklamio-small .body-bottom-right {
-    transform: rotate(-14deg);
+    -webkit-transform: rotate(-17deg);
+    -webkit-transform-style: flat;
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -moz-transform-style: flat;
+    -moz-transform: rotate(-17deg);
+    -ms-transform: rotate(-17deg);
+    -o-transform: rotate(-17deg);
+    transform: rotate(-17deg);
     width: 0px;
     height: 0px;
-    top: 420px;
+    top: 409px;
     left: 87px;
     border-style: solid;
-    border-width: 11px 118px 11px 0px;
+    border-width: 5px 105px 11px 0px;
     border-color: #828282 #DD3E29; }
   .logo-aklamio-small .body-bottom-left {
     -webkit-transform: rotate(-11deg);
+    -webkit-transform-style: flat;
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -moz-transform-style: flat;
     -moz-transform: rotate(-11deg);
     -ms-transform: rotate(-11deg);
     -o-transform: rotate(-11deg);
@@ -258,14 +276,25 @@ article[role="main"] {
     -webkit-border-radius: 67% 100% 120% 68%;
     -moz-border-radius: 67% 100% 120% 68%;
     -ms-border-radius: 67% 100% 120% 68%;
-    -o-border-radius: 67% 100% 120% 68%;
     border-radius: 67% 100% 120% 68%;
     height: 78px;
     width: 21px;
     left: 76px;
     top: 102px; }
   .logo-aklamio-small .body-bottom {
+    -webkit-transform: rotate(1deg);
+    -webkit-transform-style: flat;
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -moz-transform-style: flat;
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
     transform: rotate(1deg);
+    -webkit-border-radius: 200% 148% 61px 131%;
+    -moz-border-radius: 200% 148% 61px 131%;
+    -ms-border-radius: 200% 148% 61px 131%;
     border-radius: 200% 148% 61px 131%;
     width: 38px;
     height: 19px;
@@ -277,36 +306,27 @@ article[role="main"] {
     left: 79px;
     top: 276px;
     -webkit-transform: rotate(-10deg);
+    -webkit-transform-style: flat;
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -moz-transform-style: flat;
     -moz-transform: rotate(-10deg);
     -ms-transform: rotate(-10deg);
     -o-transform: rotate(-10deg);
     transform: rotate(-10deg);
-    background: red;
-    z-index: -1; }
-  .logo-aklamio-small .body-bottom2 {
-    width: 88px;
-    height: 70px;
-    left: 73px;
-    top: 343px;
-    background: none repeat scroll 0% 0% #DD3E29;
     z-index: -1;
-    border-radius: 98px 0 0 0px;
-    -webkit-border-radius: 98px 0 0 0px;
-    -moz-border-radius: 98px 0 0 0px;
-    -ms-border-radius: 98px 0 0 0px;
-    -o-border-radius: 98px 0 0 0px;
-    -webkit-transform: rotate(-10deg);
-    -moz-transform: rotate(-10deg);
-    -ms-transform: rotate(-10deg);
-    -o-transform: rotate(-10deg);
-    transform: rotate(-10deg); }
+    background: transparent; }
   .logo-aklamio-small .body {
-    width: 50px;
+    width: 60px;
     height: 175px;
-    left: 39px;
+    left: 25px;
     top: 272px;
-    background: #828282; }
+    background: none repeat scroll 0% 0% #828282; }
   .logo-aklamio-small .ear-curve-none {
+    -webkit-border-radius: 0px 0px 6px;
+    -moz-border-radius: 0px 0px 6px;
+    -ms-border-radius: 0px 0px 6px;
     border-radius: 0px 0px 6px;
     width: 10px;
     height: 10px;
@@ -317,9 +337,10 @@ article[role="main"] {
     -webkit-border-radius: 0 0 2px 0;
     -moz-border-radius: 0 0 2px 0;
     -ms-border-radius: 0 0 2px 0;
-    -o-border-radius: 0 0 2px 0;
     border-radius: 0 0 2px 0;
     width: 8px;
     height: 8px;
     left: 99px;
     top: 85px; }
+
+/* END LOGO */
