@@ -1,1 +1,285 @@
-/* Optimized only for the last version of Firefox * This is just a demo, should look better at the end of the work */$font-stack: Helvetica, sans-serif;$primary-color: #333;$black: #828282;$border: 1px solid #ccc; @mixin border-radius($radius) {		  -webkit-border-radius: $radius;		     -moz-border-radius: $radius;		      -ms-border-radius: $radius;		          border-radius: $radius;}@mixin transform($rotate)     {			    -webkit-transform: $rotate;-webkit-transform-style: flat;           -webkit-perspective: 1000; -webkit-backface-visibility: hidden;    -moz-backface-visibility: hidden;   -moz-transform-style: flat;				     -moz-transform: $rotate;			        -ms-transform: $rotate;			         -o-transform: $rotate;			            transform: $rotate;}html,body,ul,ol {   margin: 0;  padding: 0;}p { font-family: $font-stack;}body {  background-color: $black;    font: {      family: 100% $font-stack;      size: 10em;      weight: bold;      color: $primary-color;          }  }/*START LOGO */$logo-red: #828282;.logo-aklamio-small {  background-color: $logo-red;  width: 291px;  height: 475px;  position: relative;  overflow: hidden;  @include border-radius(150px);  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);  -webkit-user-select: none;  -moz-user-select: none;  -ms-user-select: none;  -o-user-select: none;  user-select: none;  div {    position: absolute;    background-color: #ffffff;    &[class*=-none] {      background-color: $logo-red;    }  }    .head {   transform: skewX(162deg) rotate(-19deg);   @include border-radius(0px 59px 0px 0px);   width: 133px;   height: 132px;   left: 41px;   top: 286px;   background: none repeat scroll 0% 0% #DD3E29 !important;      }    .head-top {   @include border-radius(100%);   @include transform(rotate(5deg));     width: 43px;    height: 21px;    left: 117px;    top: 166px;  }  .head-right {   width: 13px;   height: 93px;   left: 183px;   top: 309px;   background: none repeat scroll 0% 0% #DD3E29;  }    .head-bottom {    @include border-radius(0px 0px 0px 20px);    width: 8px;    height: 32px;    top: 297px;    left: 92px;    background: none repeat scroll 0% 0% #DD3E29;    z-index: 1000000;  }  .trunk-right {    @include border-radius(0px 40% 2% 0);    width: 20px;    height: 48px;    left: 140px;    top: 336px;  }  .trunk-bottom {    width: 0px;    height: 0px;    top: 402px;    border-style: solid;    border-width: 25px 28.5px 0px 0px;    border-color: #DD3E29 #828282;    left: 167px;    z-index: 1;  }  .trunk-left {    @include border-radius(40% 0px 0px 39%);    width: 50px;    height: 47px;    top: 337px;    left: 110px;  }  .trunk-bottom-none {    @include border-radius(22% 0 9px 26%);    idth: 32px;    height: 22px;    left: 127px;    top: 316px;  }  .trunk-right-none {    @include border-radius(130% 140% 50% 121%);    width: 19px;    height: 32px;    top: 187px;    left: 179px;  }  .trunk-left-none {  @include border-radius(0 170% 0 0);    width: 18px;    height: 12px;    left: 178px;    top: 184px;  }  .head-none {    @include transform(rotate(270deg));     width: 26px;    height: 30px;    left: 121px;    top: 347px;    background: none repeat scroll 0% 0% #DD3E29 !important;    z-index: 100;    @include border-radius(123% 104% 29% 30% / 144% 105% 100% 100%);  }  .eye  {  	 width: 44px;  	 height: 36px;  	 left: 115px;  	 top: 303px;  	 @include border-radius(30% 57% 0px 0px / 7% 44% 57% 32%);  	 @include transform(skewY(-4deg) skewX(4deg) rotate(1deg));   }  .ear-flap {    @include transform(rotate(70deg) skewX(156deg));     width: 14px;    height: 10px;    top: 310px;    left: 180px;    background: none repeat scroll 0% 0% #DD3E29 !important;  }  .ear-flap-left-none {    @include border-radius(16px 0 0 0);    width: 39px;    height: 20px;    top: 93px;    left: 67px;  }  .ear-flap-right-none {    @include border-radius(9px 0 0 0);    width: 25px;    height: 32px;    top: 58px;    left: 107px;  }  .body-top {    @include border-radius(47% 43% 14%);    width: 39px;    height: 29px;    top: 317px;    left: 110px;    background-color: #DD3E29;  }  .body-left {   @include border-radius(40px 0px 0px 167%);    width: 29px;    height: 6px;    top: 145px;    left: 126px;    @include transform(rotate(12deg));     z-index: 101;  }  .body-bottom-right {    @include transform(rotate(-17deg));         width: 0px;    height: 0px;    top: 409px;    left: 87px;    border-style: solid;    border-width: 5px 105px 11px 0px;    border-color: #828282 #DD3E29;  }  .body-bottom-left {    @include transform(rotate(-11deg));     @include border-radius(67% 100% 120% 68%);    height: 78px;    width: 21px;    left: 76px;    top: 102px;  }  .body-bottom {    @include transform(rotate(1deg));     @include border-radius(200% 148% 61px 131%);    width: 38px;    height: 19px;    left: 113px;    top: 338px;  }  .body-middle {    width: 82px;    height: 70px;    left: 79px;    top: 276px;    @include transform(rotate(-10deg));     z-index: -1;    background: transparent;  }  .body {    width: 60px;    height: 175px;    left: 25px;    top: 272px;    background: none repeat scroll 0% 0% #828282;  }  .ear-curve-none {    @include border-radius(0px 0px 6px);    width: 10px;    height: 10px;    left: 115px;    top: 333px;    display: none;  }  .ear-curve {    @include border-radius(0 0 2px 0);    width: 8px;    height: 8px;    left: 99px;    top: 85px;  }  }/* END LOGO */
+/* Optimized only for the last version of Firefox
+ * This is just a demo, should look better at the end of the work */
+
+
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$black: #828282;
+$border: 1px solid #ccc; 
+
+@mixin border-radius($radius) {
+		  -webkit-border-radius: $radius;
+		     -moz-border-radius: $radius;
+		      -ms-border-radius: $radius;
+		          border-radius: $radius;
+}
+
+@mixin transform($rotate)     {
+
+			    -webkit-transform: $rotate;
+-webkit-transform-style: flat;
+           -webkit-perspective: 1000;
+ -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+   -moz-transform-style: flat;
+				     -moz-transform: $rotate;
+			        -ms-transform: $rotate;
+			         -o-transform: $rotate;
+			            transform: $rotate;
+}
+
+html,
+body,
+ul,
+ol {
+   margin: 0;
+  padding: 0;
+}
+
+p { font-family: $font-stack;}
+
+body {
+
+  background-color: $black;
+  
+  font: {
+      family: 100% $font-stack;
+      size: 10em;
+      weight: bold;
+      color: $primary-color;
+      
+    }
+  
+}
+
+
+/*START LOGO */
+$logo-red: #828282;
+
+.logo-aklamio-small {
+  background-color: $logo-red;
+  width: 291px;
+  height: 475px;
+  position: relative;
+  overflow: hidden;
+  @include border-radius(150px);
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  div {
+    position: absolute;
+    background-color: #ffffff;
+    &[class*=-none] {
+      background-color: $logo-red;
+    }
+  }
+  
+  .head {
+   transform: skewX(162deg) rotate(-19deg);
+   @include border-radius(0px 59px 0px 0px);
+   width: 133px;
+   height: 132px;
+   left: 41px;
+   top: 286px;
+   background: none repeat scroll 0% 0% #DD3E29 !important;
+    
+  }
+  
+
+  .head-top {
+   @include border-radius(100%);
+   @include transform(rotate(5deg)); 
+    width: 43px;
+    height: 21px;
+    left: 117px;
+    top: 166px;
+  }
+  .head-right {
+   width: 13px;
+   height: 93px;
+   left: 183px;
+   top: 309px;
+   background: none repeat scroll 0% 0% #DD3E29;
+
+  }
+  
+  .head-bottom {
+    @include border-radius(0px 0px 0px 20px);
+    width: 8px;
+    height: 32px;
+    top: 297px;
+    left: 92px;
+    background: none repeat scroll 0% 0% #DD3E29;
+    z-index: 1000000;
+  }
+  .trunk-right {
+    @include border-radius(0px 40% 2% 0);
+    width: 20px;
+    height: 48px;
+    left: 140px;
+    top: 336px;
+  }
+  .trunk-bottom {
+    width: 0px;
+    height: 0px;
+    top: 402px;
+    border-style: solid;
+    border-width: 25px 28.5px 0px 0px;
+    border-color: #DD3E29 #828282;
+    left: 167px;
+    z-index: 1;
+  }
+  .trunk-left {
+    @include border-radius(40% 0px 0px 39%);
+    width: 50px;
+    height: 47px;
+    top: 337px;
+    left: 110px;
+  }
+  .trunk-bottom-none {
+    @include border-radius(22% 0 9px 26%);
+    width: 32px;
+    height: 22px;
+    left: 127px;
+    top: 316px;
+  }
+  .trunk-right-none {
+    @include border-radius(130% 140% 50% 121%);
+    width: 19px;
+    height: 32px;
+    top: 187px;
+    left: 179px;
+  }
+  .trunk-left-none {
+  @include border-radius(0 170% 0 0);
+    width: 18px;
+    height: 12px;
+    left: 178px;
+    top: 184px;
+  }
+  .head-none {
+    @include transform(rotate(270deg)); 
+    width: 26px;
+    height: 30px;
+    left: 121px;
+    top: 347px;
+    background: none repeat scroll 0% 0% #DD3E29 !important;
+    z-index: 100;
+    @include border-radius(123% 104% 29% 30% / 144% 105% 100% 100%);
+  }
+  .eye  {
+  	 width: 44px;
+  	 height: 36px;
+  	 left: 115px;
+  	 top: 303px;
+  	 @include border-radius(30% 57% 0px 0px / 7% 44% 57% 32%);
+  	 @include transform(skewY(-4deg) skewX(4deg) rotate(1deg)); 
+  }
+  .ear-flap {
+    @include transform(rotate(70deg) skewX(156deg)); 
+    width: 14px;
+    height: 10px;
+    top: 310px;
+    left: 180px;
+    background: none repeat scroll 0% 0% #DD3E29 !important;
+  }
+  .ear-flap-left-none {
+    @include border-radius(16px 0 0 0);
+    width: 39px;
+    height: 20px;
+    top: 93px;
+    left: 67px;
+  }
+  .ear-flap-right-none {
+    @include border-radius(9px 0 0 0);
+    width: 25px;
+    height: 32px;
+    top: 58px;
+    left: 107px;
+  }
+  .body-top {
+    @include border-radius(47% 43% 14%);
+    width: 39px;
+    height: 29px;
+    top: 317px;
+    left: 110px;
+    background-color: #DD3E29;
+  }
+  .body-left {
+   @include border-radius(40px 0px 0px 167%);
+    width: 29px;
+    height: 6px;
+    top: 145px;
+    left: 126px;
+    @include transform(rotate(12deg)); 
+    z-index: 101;
+  }
+  .body-bottom-right {
+    @include transform(rotate(-17deg));
+     
+    width: 0px;
+    height: 0px;
+    top: 409px;
+    left: 87px;
+    border-style: solid;
+    border-width: 5px 105px 11px 0px;
+    border-color: #828282 #DD3E29;
+  }
+  .body-bottom-left {
+    @include transform(rotate(-11deg)); 
+    @include border-radius(67% 100% 120% 68%);
+    height: 78px;
+    width: 21px;
+    left: 76px;
+    top: 102px;
+  }
+  .body-bottom {
+    @include transform(rotate(1deg)); 
+    @include border-radius(200% 148% 61px 131%);
+    width: 38px;
+    height: 19px;
+    left: 113px;
+    top: 338px;
+  }
+  .body-middle {
+    width: 82px;
+    height: 70px;
+    left: 79px;
+    top: 276px;
+    @include transform(rotate(-10deg)); 
+    z-index: -1;
+    background: transparent;
+  }
+  .body {
+    width: 60px;
+    height: 175px;
+    left: 25px;
+    top: 272px;
+    background: none repeat scroll 0% 0% #828282;
+  }
+  .ear-curve-none {
+    @include border-radius(0px 0px 6px);
+    width: 10px;
+    height: 10px;
+    left: 115px;
+    top: 333px;
+    display: none;
+  }
+  .ear-curve {
+    @include border-radius(0 0 2px 0);
+    width: 8px;
+    height: 8px;
+    left: 99px;
+    top: 85px;
+  }
+  
+}
+
+/* END LOGO */
+
+
+
