@@ -17,16 +17,16 @@ $border: 1px solid #ccc;
 
 @mixin transform($rotate)     {
 
-			    -webkit-transform: $rotate;
--webkit-transform-style: flat;
-           -webkit-perspective: 1000;
- -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-   -moz-transform-style: flat;
-				     -moz-transform: $rotate;
-			        -ms-transform: $rotate;
-			         -o-transform: $rotate;
-			            transform: $rotate;
+			-webkit-transform: $rotate;
+		     -webkit-transform-style: flat;
+		         -webkit-perspective: 1000;
+	       -webkit-backface-visibility: hidden;
+		  -moz-backface-visibility: hidden;
+			-moz-transform-style: flat;
+			   -moz-transform: $rotate;
+			    -ms-transform: $rotate;
+			     -o-transform: $rotate;
+			        transform: $rotate;
 }
 
 html,
